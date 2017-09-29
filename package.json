@@ -1,0 +1,22 @@
+{
+    "name": "koda-backup",
+    "version": "1.0.0",
+    "description": "Backup your koda.nu files",
+    "homepage": "https://github.com/ekner/koda-backup",
+    "license": "MIT",
+    "author": {
+        "name": "Gustav Ekner",
+        "email": "gustav.ekner@gmail.com",
+        "url": "xzy.se"
+    },
+    "repository": {
+        "type" : "git",
+        "url" : "https://github.com/ekner/koda-backup.git"
+    },
+    "dependencies": {
+        "cheerio": "^1.0.0-rc.2",
+        "jszip": "^3.1.4",
+        "request": "^2.83.0",
+        "url-parse": "^1.1.9"
+    }
+}
