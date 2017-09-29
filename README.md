@@ -26,6 +26,7 @@ Börja med att öppna något form av terminalfönster i lämplig katalog. Skriv 
 
 ```
 git clone https://github.com/ekner/koda-backup.git  # Ladda ner skriptet
+cd koda-backup                                      # Gå in i mappen
 npm install                                         # Installera modulerna för skriptet
 node koda-backup.js                                 # Kör skriptet
 ```
