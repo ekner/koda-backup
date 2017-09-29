@@ -6,10 +6,12 @@ och spara dem i antingen vanliga mappar eller zip-filer.
 
 Det finns en options.json-fil med följande struktur: (Ta inte bort filen)
 
+```
 email:    string
 password: string
 zipFiles: bool
 verbose:  bool
+```
 
 Om email och/eller password inte är tomma, kommer skriptet använda de fälten
 i stället för att fråga. Om verbose är true, kommer mer utförliga felmeddelanden
