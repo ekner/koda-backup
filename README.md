@@ -20,6 +20,7 @@ skrivas ut om det blir något fel.
 ## Användning:
 
 Du måste ha nodejs, npm och git installerat. Både Linux, Mac och Windows fungerar.
+
 Börja med att öppna något form av terminalfönster. Sedan kan du till exempel göra så här:
 (I windows måste du använda PowerShell om du vill att nedanstående kommandon ska fungera)
 
