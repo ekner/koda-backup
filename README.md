@@ -21,13 +21,10 @@ skrivas ut om det blir något fel.
 
 Du måste ha nodejs, npm och git installerat. Både Linux, Mac och Windows fungerar.
 
-Börja med att öppna något form av terminalfönster. Sedan kan du till exempel göra så här:
-(I windows måste du använda PowerShell om du vill att nedanstående kommandon ska fungera)
+Börja med att öppna något form av terminalfönster i lämplig katalog. Skriv sedan följande kommandon:
+(Om du använder cmd i stället PowerShell i Windows måste du ta bort kommentarerna på slutet)
 
 ```
-cd ~                                                # Navigera till hem-katalogen
-mkdir koda-backup                                   # Skapa en tom katalog
-cd koda-backup                                      # Gå in i katalogen
 git clone https://github.com/ekner/koda-backup.git  # Ladda ner skriptet
 npm install                                         # Installera modulerna för skriptet
 node koda-backup.js                                 # Kör skriptet
