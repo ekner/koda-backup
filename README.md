@@ -25,10 +25,10 @@ Börja med att öppna något form av terminalfönster. Sedan kan du till exempel
 (I windows måste du använda PowerShell om du vill att nedanstående kommandon ska fungera)
 
 ```
-cd ~                   # Navigera till hem-katalogen
-mkdir koda-backup      # Skapa en tom katalog
-cd koda-backup         # Gå in i katalogen
-git clone https://github.com/ekner/koda-backup.git # Ladda ner skriptet
-npm install            # Installera modulerna för skriptet
-node koda-backup.js    # Kör skriptet
+cd ~                                                # Navigera till hem-katalogen
+mkdir koda-backup                                   # Skapa en tom katalog
+cd koda-backup                                      # Gå in i katalogen
+git clone https://github.com/ekner/koda-backup.git  # Ladda ner skriptet
+npm install                                         # Installera modulerna för skriptet
+node koda-backup.js                                 # Kör skriptet
 ```
