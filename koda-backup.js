@@ -5,6 +5,7 @@ const URL = require("url-parse");
 const readline = require("readline");
 const fs = require("fs");
 const JSZip = require("jszip");
+const prompt = require("prompt");
 
 const options = require("./options.json");
 const cookieJar = request.jar();
@@ -18,7 +19,6 @@ const rl = readline.createInterface({input: process.stdin, output: process.stdou
 function login(callback) {
     getMail(function(mail) {
         getPass(function(pass) {
-            rl.close();
             console.log("Loggar in...");
 
             request.post({url : loginPage, jar: cookieJar, form: {email: mail, password: pass}}, function(err, httpResponse, body) {
@@ -44,7 +44,8 @@ function getMail(callback)
     if (options.email !== "") {
         callback(options.email);
     } else {
-        rl.question("Ange e-mail:", function(mail) {
+        rl.question("Ange e-mail: ", function(mail) {
+            rl.close();
             callback(mail);
         });
     }
@@ -55,8 +56,12 @@ function getPass(callback)
     if (options.password !== "") {
         callback(options.password);
     } else {
-        rl.question("Ange lösenord (döljs ej):", function(pass) {
-            callback(pass);
+        prompt.start();
+        prompt.message = "";
+        prompt.delimiter = ":";
+        const props = {password: {hidden: true, description: "Ange lösenord", replace: "*", type: "string"}};
+        prompt.get({properties: props}, function(err, result) {
+            callback(result.password);
         });
     }
 }
