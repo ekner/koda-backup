@@ -22,7 +22,7 @@ skrivas ut om det blir något fel.
 Du måste ha nodejs, npm och git installerat. Både Linux, Mac och Windows fungerar.
 
 Börja med att öppna något form av terminalfönster i lämplig katalog. Skriv sedan följande kommandon:
-(Om du använder cmd i stället PowerShell i Windows måste du ta bort kommentarerna på slutet)
+(Om du använder cmd i stället för PowerShell i Windows måste du ta bort kommentarerna på slutet)
 
 ```
 git clone https://github.com/ekner/koda-backup.git  # Ladda ner skriptet
