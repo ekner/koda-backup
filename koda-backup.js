@@ -14,6 +14,7 @@ const labPage = "http://koda.nu/labbet";
 const backupDirectory = "./backups";
 const storeName = (new Date().toISOString().substr(0, 10)) + ".koda-bak";
 const rl = readline.createInterface({input: process.stdin, output: process.stdout});
+prompt.colors = false;
 
 // Log in on koda.nu and store the login session in the cookieJar variable:
 function login(callback) {
