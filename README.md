@@ -30,3 +30,11 @@ cd koda-backup                                      # Gå in i mappen
 npm install                                         # Installera modulerna för skriptet
 node koda-backup.js                                 # Kör skriptet
 ```
+
+## Exempel:
+
+Om du inte vill spara ditt lösenord i klartext i options.json finns ett alternativ i Ubuntu, om du har sparat ditt lösenord för koda.nu i Chrome/Opera. Nedanstående kommando kommer extrahera det lösenordet, skriva ut det tillsammans med en mejladress och sedan köra koda-backup med det som input. Kom ihåg att byta ut mejlen mot din egna, och installera libsecret-tools om inte secret-tool finns.
+
+```
+echo -e "test.testsdotter@example.com\n$(secret-tool lookup action_url http://koda.nu/login)" | node koda-backup.js
+```
