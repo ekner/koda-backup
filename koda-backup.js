@@ -17,7 +17,8 @@ const rl = readline.createInterface({input: process.stdin, output: process.stdou
 prompt.colors = false;
 
 // Log in on koda.nu and store the login session in the cookieJar variable:
-function login(callback) {
+function login(callback)
+{
     getMail(function(mail) {
         getPass(function(pass) {
             console.log("Loggar in...");
@@ -68,7 +69,8 @@ function getPass(callback)
 }
 
 // Get the lab page with all projects by using the login session:
-function getLabPage(callback) {
+function getLabPage(callback)
+{
     request.get({url : labPage, jar: cookieJar}, function(err, httpResponse, body) {
         if (err)
             error("Kunde inte gå till labb-sidan, kontrollera din nätverksanslutning", err);
@@ -93,7 +95,8 @@ function extractPage(link, title, store, callback)
 }
 
 // Loop through all project links on the lab page and call extractPage on them:
-function extractPages(body, callback) {
+function extractPages(body, callback)
+{
     console.log("Extraherer länkar...");
     const $ = cheerio.load(body);
     const links = $(".public_link");
@@ -161,7 +164,8 @@ function finalizeBackup(store)
     }
 }
 
-function error(msg, err) {
+function error(msg, err)
+{
     console.log(msg + "\n");
     if (typeof err !== "undefined" && options.verbose === true)
         throw(err);
