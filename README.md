@@ -4,13 +4,13 @@ och spara dem i antingen vanliga mappar eller zip-filer.
 
 ## options.json
 
-Det finns en options.json-fil med följande struktur: (Ta inte bort filen)
+Det finns en options.json-fil med följande struktur (ta inte bort filen):
 
 ```
-email:    string
-password: string
-zipFiles: bool
-verbose:  bool
+email:    textsträng
+password: textsträng
+zipFiles: true/false
+verbose:  true/false
 ```
 
 Om email och/eller password inte är tomma, kommer skriptet använda de fälten
@@ -22,7 +22,7 @@ skrivas ut om det blir något fel.
 Du måste ha nodejs, npm och git installerat. Både Linux, Mac och Windows fungerar.
 
 Börja med att öppna något form av terminalfönster i lämplig katalog. Skriv sedan följande kommandon:
-(Om du använder cmd i stället för PowerShell i Windows måste du ta bort kommentarerna på slutet)
+(om du använder CMD i stället för PowerShell i Windows måste du ta bort kommentarerna på slutet)
 
 ```
 git clone https://github.com/ekner/koda-backup.git  # Ladda ner skriptet
