@@ -162,6 +162,12 @@ function finalizeBackup(store)
             console.log(path.join("./", backupDirectory, name + ".zip") + " skapad.");
         });
     }
+
+    // Set timeout to be sure all write operations finish:
+    setTimeout(function() {
+    	console.log("Klar");
+    	process.exit(0);
+    }, 2000);
 }
 
 function error(msg, err)
