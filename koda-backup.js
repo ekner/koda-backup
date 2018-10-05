@@ -165,8 +165,8 @@ function finalizeBackup(store)
 
     // Set timeout to be sure all write operations finish:
     setTimeout(function() {
-    	console.log("Klar");
-    	process.exit(0);
+        console.log("Klar");
+        process.exit(0);
     }, 2000);
 }
 
